@@ -1,4 +1,4 @@
-package pl.droidsonroids.bugcatching.dummy
+package pl.droidsonroids.bugcatching.items
 
 import java.util.*
 
@@ -18,14 +18,16 @@ object DummyContent {
     /**
      * A map of sample (dummy) items, by ID.
      */
-    val ITEM_MAP: MutableMap<String, DummyItem> = HashMap()
+    val ITEM_MAP: MutableMap<Int, DummyItem> = HashMap()
 
     private val COUNT = 25
 
     init {
         // Add some sample items.
         for (i in 1..COUNT) {
-            addItem(createDummyItem(i))
+            addItem(
+                createDummyItem(i)
+            )
         }
     }
 
@@ -36,7 +38,7 @@ object DummyContent {
 
     private fun createDummyItem(position: Int): DummyItem {
         return DummyItem(
-            position.toString(),
+            position,
             "Item %d".format(Locale.getDefault(), position),
             makeDetails(position),
             position % 3 == 0
@@ -56,7 +58,7 @@ object DummyContent {
      * A dummy item representing a piece of content.
      */
     data class DummyItem(
-        val id: String,
+        val id: Int,
         val content: String,
         val details: String,
         val isSuccessful: Boolean

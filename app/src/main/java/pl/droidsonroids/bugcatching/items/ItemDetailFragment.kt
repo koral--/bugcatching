@@ -1,13 +1,17 @@
-package pl.droidsonroids.bugcatching
+package pl.droidsonroids.bugcatching.items
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import pl.droidsonroids.bugcatching.dummy.DummyContent
+import androidx.appcompat.app.AlertDialog
+import androidx.fragment.app.DialogFragment
 import kotlinx.android.synthetic.main.activity_item_detail.*
 import kotlinx.android.synthetic.main.item_detail.view.*
+import pl.droidsonroids.bugcatching.R
+import java.text.SimpleDateFormat
+import java.util.*
 
 /**
  * A fragment representing a single Item detail screen.
@@ -30,8 +34,12 @@ class ItemDetailFragment : Fragment() {
                 // Load the dummy content specified by the fragment
                 // arguments. In a real-world scenario, use a Loader
                 // to load content from a content provider.
-                item = DummyContent.ITEM_MAP[it.getString(ARG_ITEM_ID)]
+                item = DummyContent.ITEM_MAP[it.getInt(ARG_ITEM_ID)]
                 activity?.toolbar_layout?.title = item?.content
+                if (item?.id==2) {
+                    WarnDialogFragment()
+                        .show(childFragmentManager, "warn")
+                }
             }
         }
     }
@@ -55,4 +63,9 @@ class ItemDetailFragment : Fragment() {
          */
         const val ARG_ITEM_ID = "item_id"
     }
+}
+
+class WarnDialogFragment : DialogFragment() {
+    override fun onCreateDialog(savedInstanceState: Bundle?) =
+        AlertDialog.Builder(requireContext()).setTitle("Warning!").setMessage(SimpleDateFormat("HH:mm:ss").format(Date())).create()
 }

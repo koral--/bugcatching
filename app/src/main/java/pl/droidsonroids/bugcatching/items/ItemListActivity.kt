@@ -1,6 +1,5 @@
-package pl.droidsonroids.bugcatching
+package pl.droidsonroids.bugcatching.items
 
-import android.app.Dialog
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -11,13 +10,11 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import androidx.appcompat.app.AlertDialog
-import androidx.fragment.app.DialogFragment
 
-import pl.droidsonroids.bugcatching.dummy.DummyContent
 import kotlinx.android.synthetic.main.activity_item_list.*
 import kotlinx.android.synthetic.main.item_list_content.view.*
 import kotlinx.android.synthetic.main.item_list.*
+import pl.droidsonroids.bugcatching.R
 
 /**
  * An activity representing a list of Pings. This activity
@@ -60,7 +57,12 @@ class ItemListActivity : AppCompatActivity() {
     }
 
     private fun setupRecyclerView(recyclerView: RecyclerView) {
-        recyclerView.adapter = SimpleItemRecyclerViewAdapter(this, DummyContent.ITEMS, twoPane)
+        recyclerView.adapter =
+            SimpleItemRecyclerViewAdapter(
+                this,
+                DummyContent.ITEMS,
+                twoPane
+            )
     }
 
     class SimpleItemRecyclerViewAdapter(
@@ -76,9 +78,10 @@ class ItemListActivity : AppCompatActivity() {
             onClickListener = View.OnClickListener { v ->
                 val item = v.tag as DummyContent.DummyItem
                 if (twoPane) {
-                    val fragment = ItemDetailFragment().apply {
+                    val fragment = ItemDetailFragment()
+                        .apply {
                         arguments = Bundle().apply {
-                            putString(ItemDetailFragment.ARG_ITEM_ID, item.id)
+                            putInt(ItemDetailFragment.ARG_ITEM_ID, item.id)
                         }
                     }
                     parentActivity.supportFragmentManager
@@ -102,7 +105,7 @@ class ItemListActivity : AppCompatActivity() {
 
         override fun onBindViewHolder(holder: ViewHolder, position: Int) {
             val item = values[position]
-            holder.idView.text = item.id
+            holder.idView.text = item.id.toString()
             holder.contentView.text = item.content
             holder.statusView.setImageResource(
                 when (item.isSuccessful) {
@@ -125,9 +128,4 @@ class ItemListActivity : AppCompatActivity() {
             val statusView: ImageView = view.status
         }
     }
-}
-
-class WarnDialogFragment : DialogFragment() {
-    override fun onCreateDialog(savedInstanceState: Bundle?) =
-        AlertDialog.Builder(requireContext()).setTitle("Title").setMessage("message").create()
 }
