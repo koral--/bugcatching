@@ -8,6 +8,6 @@ class LocalizationActivity : AppCompatActivity(R.layout.activity_localization) {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        findViewById<Button>(R.id.logcatButton).text = "${getString(R.string.log)} ${getString(R.string.cat)}"
+        findViewById<Button>(R.id.logcatButton).text = "${getString(R.string.app)} ${getString(R.string.settings)}"
     }
 }

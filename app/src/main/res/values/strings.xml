@@ -7,6 +7,7 @@
     <string name="always_allow_wi_fi_roam_scans">Always allow Wi‑Fi Roam Scans</string>
     <string name="enable_google_play_services">Enable Google Play Services</string>
     <string name="install">Install</string>
-    <string name="log">Log</string>
-    <string name="cat">cat</string>
+    <string name="app">App</string>
+    <string name="settings">settings</string>
+    <string name="font_scale" translatable="false">Font scale</string>
 </resources>
