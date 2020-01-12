@@ -1,0 +1,7 @@
+<resources>
+    <string name="always_allow_wi_fi_roam_scans">Zawsze szukaj Wi-Fi w roamingu</string>
+    <string name="enable_google_play_services">Włącz usługi Google Play</string>
+    <string name="install">Zainstaluj</string>
+    <string name="log">Log</string>
+    <string name="cat">cat</string>
+</resources>
