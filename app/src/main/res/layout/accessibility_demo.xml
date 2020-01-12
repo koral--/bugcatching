@@ -52,16 +52,4 @@
             android:contentDescription="test2"
             android:focusable="true" />
     </FrameLayout>
-
-    <Button
-        android:id="@+id/demo1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Demo1" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:nextFocusDown="@id/demo1"
-        android:text="Demo2" />
 </LinearLayout>

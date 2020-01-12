@@ -1,4 +1,12 @@
 <resources>
-    <string name="app_name">Bug catching</string>
-    <string name="title_item_detail">Item Detail</string>
+    <string name="app_name" translatable="false">Bug catching</string>
+    <string name="title_item_detail" translatable="false">Item Detail</string>
+    <string name="items" translatable="false">Items</string>
+    <string name="accessibility" translatable="false">Accessibility</string>
+    <string name="localization" translatable="false">Localization</string>
+    <string name="always_allow_wi_fi_roam_scans">Always allow Wi‑Fi Roam Scans</string>
+    <string name="enable_google_play_services">Enable Google Play Services</string>
+    <string name="install">Install</string>
+    <string name="log">Log</string>
+    <string name="cat">cat</string>
 </resources>

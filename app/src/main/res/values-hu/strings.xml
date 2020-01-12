@@ -1,0 +1,7 @@
+<resources>
+    <string name="always_allow_wi_fi_roam_scans">Wi‑Fi-roaming ellenőrzésének engedélyezése mindig</string>
+    <string name="enable_google_play_services">Google Play-szolgáltatások engedélyezése</string>
+    <string name="install">Telepítés</string>
+    <string name="log">Log</string>
+    <string name="cat">cat</string>
+</resources>
