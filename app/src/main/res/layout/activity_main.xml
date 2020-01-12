@@ -28,8 +28,8 @@
 
     <Button
         android:layout_gravity="center"
-        android:onClick="onFontScaleClick"
-        android:text="@string/font_scale"
+        android:onClick="onConfigurationClick"
+        android:text="@string/configuration"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 

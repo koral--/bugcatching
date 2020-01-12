@@ -33,7 +33,7 @@
         </activity>
         <activity android:name=".accessibility.AccessibilityActivity" />
         <activity android:name=".LocalizationActivity" />
-        <activity android:name=".FontScaleActivity" />
+        <activity android:name=".ConfigurationActivity" />
     </application>
 
 </manifest>

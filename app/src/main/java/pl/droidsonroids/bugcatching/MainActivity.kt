@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
         startActivity(Intent(this, LocalizationActivity::class.java))
     }
 
-    fun onFontScaleClick(view: View) {
-        startActivity(Intent(this, FontScaleActivity::class.java))
+    fun onConfigurationClick(view: View) {
+        startActivity(Intent(this, ConfigurationActivity::class.java))
     }
 }

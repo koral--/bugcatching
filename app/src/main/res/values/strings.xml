@@ -9,5 +9,6 @@
     <string name="install">Install</string>
     <string name="app">App</string>
     <string name="settings">settings</string>
-    <string name="font_scale" translatable="false">Font scale</string>
+    <string name="configuration" translatable="false">Configuration</string>
+    <string name="clickCount" translatable="false">Number of clicks: %d</string>
 </resources>
