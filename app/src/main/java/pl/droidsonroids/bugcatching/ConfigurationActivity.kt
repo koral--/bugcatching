@@ -22,6 +22,6 @@ class ConfigurationActivity : AppCompatActivity(R.layout.activity_configuration)
     fun onConfigIncrementClick(view: View) {
         clickCount++
         numberOfClicksResource.text = getString(R.string.clickCount, clickCount)
-        numberOfClicksRaw.text = "$clickCount"
+        numberOfClicksRaw.text = "Number of clicks $clickCount"
     }
 }
