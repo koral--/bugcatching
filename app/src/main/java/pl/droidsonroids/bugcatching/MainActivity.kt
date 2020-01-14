@@ -27,4 +27,8 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
     fun onApiClick(view: View) {
         startActivity(Intent(this, ApiActivity::class.java))
     }
+
+    fun onAboutClick(view: View) {
+        startActivity(Intent(this, AboutActivity::class.java))
+    }
 }

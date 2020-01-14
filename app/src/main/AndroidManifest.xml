@@ -35,6 +35,7 @@
         <activity android:name=".LocalizationActivity" />
         <activity android:name=".ConfigurationActivity" />
         <activity android:name=".ApiActivity" />
+        <activity android:name=".AboutActivity" />
     </application>
 
 </manifest>
