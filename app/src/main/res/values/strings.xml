@@ -11,4 +11,5 @@
     <string name="settings">settings</string>
     <string name="configuration" translatable="false">Configuration</string>
     <string name="clickCount" translatable="false">Number of clicks: %d</string>
+    <string name="api" translatable="false">Api</string>
 </resources>

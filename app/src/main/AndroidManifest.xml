@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="pl.droidsonroids.bugcatching">
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -20,8 +21,7 @@
         <activity
             android:name=".items.ItemListActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
-        </activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".items.ItemDetailActivity"
             android:label="@string/title_item_detail"
@@ -34,6 +34,7 @@
         <activity android:name=".accessibility.AccessibilityActivity" />
         <activity android:name=".LocalizationActivity" />
         <activity android:name=".ConfigurationActivity" />
+        <activity android:name=".ApiActivity" />
     </application>
 
 </manifest>
