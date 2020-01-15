@@ -37,6 +37,7 @@
         <activity android:name=".ConfigurationActivity" />
         <activity android:name=".ApiActivity" />
         <activity android:name=".AboutActivity" />
+        <activity android:name=".IntroActivity" />
     </application>
 
 </manifest>

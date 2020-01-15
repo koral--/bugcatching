@@ -31,4 +31,8 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
     fun onAboutClick(view: View) {
         startActivity(Intent(this, AboutActivity::class.java))
     }
+
+    fun onIntroClick(view: View) {
+        startActivity(Intent(this, IntroActivity::class.java))
+    }
 }
