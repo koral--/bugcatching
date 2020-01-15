@@ -1,4 +1,4 @@
-package pl.droidsonroids.bugcatching.accessibility
+package pl.droidsonroids.bugcatching
 
 import androidx.appcompat.app.AppCompatActivity
 import pl.droidsonroids.bugcatching.R

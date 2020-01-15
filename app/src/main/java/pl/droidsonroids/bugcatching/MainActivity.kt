@@ -3,9 +3,7 @@ package pl.droidsonroids.bugcatching
 import android.content.Intent
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import pl.droidsonroids.bugcatching.accessibility.AccessibilityActivity
 import pl.droidsonroids.bugcatching.items.ItemListActivity
-import pl.droidsonroids.bugcatching.items.ItemListFragment
 
 class MainActivity : AppCompatActivity(R.layout.activity_main) {
 

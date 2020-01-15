@@ -32,7 +32,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="pl.droidsonroids.bugcatching.items.ItemListFragment" />
         </activity>
-        <activity android:name=".accessibility.AccessibilityActivity" />
+        <activity android:name=".AccessibilityActivity" />
         <activity android:name=".LocalizationActivity" />
         <activity android:name=".ConfigurationActivity" />
         <activity android:name=".ApiActivity" />
