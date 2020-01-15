@@ -26,11 +26,11 @@
         <activity
             android:name=".items.ItemDetailActivity"
             android:label="@string/title_item_detail"
-            android:parentActivityName=".items.ItemListActivity"
+            android:parentActivityName=".items.ItemListFragment"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="pl.droidsonroids.bugcatching.items.ItemListActivity" />
+                android:value="pl.droidsonroids.bugcatching.items.ItemListFragment" />
         </activity>
         <activity android:name=".accessibility.AccessibilityActivity" />
         <activity android:name=".LocalizationActivity" />
