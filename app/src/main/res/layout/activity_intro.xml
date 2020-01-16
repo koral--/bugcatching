@@ -1,64 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="8dp">
+    android:layout_height="match_parent">
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:text="How to catch a bug\nTips&amp;Tricks"
-        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline3" />
+        android:orientation="vertical"
+        android:padding="8dp">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:gravity="center_horizontal"
-        android:text="Karol Wrótniak"
-        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"
-        android:textStyle="bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="How to catch a bug\nTips&amp;Tricks"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline3" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:drawableStart="@drawable/github"
-        android:drawablePadding="12dp"
-        android:text="koral--"
-        android:textAlignment="viewStart"
-        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:gravity="center_horizontal"
+            android:text="Karol Wrótniak"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"
+            android:textStyle="bold" />
 
-    <TextView
-        android:layout_marginBottom="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:autoLink="email"
-        android:drawableStart="@drawable/ic_baseline_mail_outline"
-        android:gravity="center"
-        android:linksClickable="true"
-        android:text="karol.wrotniak@droidsonroids.pl"
-        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:drawableStart="@drawable/github"
+            android:drawablePadding="12dp"
+            android:text="koral--"
+            android:textAlignment="viewStart"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4" />
 
-    <TextView
-        android:padding="4dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:drawableStart="@drawable/ic_foqa"
-        android:drawablePadding="12dp"
-        android:gravity="center"
-        android:text="FoQA"
-        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:autoLink="email"
+            android:drawableStart="@drawable/ic_baseline_mail_outline"
+            android:gravity="center"
+            android:linksClickable="true"
+            android:text="karol.wrotniak@droidsonroids.pl"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:drawableStart="@drawable/stf"
-        android:drawablePadding="12dp"
-        android:gravity="center"
-        android:text="OpenSTF"
-        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_foqa"
+            android:drawablePadding="12dp"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="FoQA"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5" />
 
-</LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/stf"
+            android:drawablePadding="12dp"
+            android:gravity="center"
+            android:text="OpenSTF"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5" />
+
+    </LinearLayout>
+</ScrollView>
