@@ -26,19 +26,39 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:drawableStart="@drawable/github"
-        android:gravity="center"
+        android:drawablePadding="12dp"
         android:text="koral--"
+        android:textAlignment="viewStart"
         android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4" />
 
     <TextView
+        android:layout_marginBottom="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
         android:autoLink="email"
         android:drawableStart="@drawable/ic_baseline_mail_outline"
         android:gravity="center"
         android:linksClickable="true"
         android:text="karol.wrotniak@droidsonroids.pl"
         android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6" />
+
+    <TextView
+        android:padding="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_foqa"
+        android:drawablePadding="12dp"
+        android:gravity="center"
+        android:text="FoQA"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/stf"
+        android:drawablePadding="12dp"
+        android:gravity="center"
+        android:text="OpenSTF"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5" />
 
 </LinearLayout>
